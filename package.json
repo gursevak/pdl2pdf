@@ -12,7 +12,6 @@
     "react-dom": "^16.8.6",
     "react-loading-bar": "0.0.7",
     "react-scripts": "3.0.1",
-    "request": "^2.88.0",
     "websocket-driver": "^0.7.3"
   },
   "homepage": "https://gursevak.github.io/pdl2pdf",
