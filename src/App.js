@@ -1,6 +1,6 @@
 import React from 'react';
 import url from 'url'
-import http from 'http'
+import request from 'request'
 import cheerio from 'cheerio'
 import * as jsPDF from 'jspdf'
 import Jimp from 'jimp/es';
@@ -31,9 +31,9 @@ export default class App extends React.PureComponent {
       var pages = 1;
       var pagesLeft = 0;
       var buffer = [];
-      console.log('something happened');
-      http.request(metaUrl , function(error, response, body) {
-        console.log(metaUrl);
+      request({
+        uri: metaUrl,
+      }, function(error, response, body) {
         var $ = cheerio.load(body);
         numPages = $('td').filter(function() {
           return $(this).text().trim() === 'Pages';
