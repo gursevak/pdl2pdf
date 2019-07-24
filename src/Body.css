@@ -1,0 +1,21 @@
+.component-pdl-input {
+}
+
+.component-pdl-input > div {
+  margin: 10px;
+}
+
+.component-pdl-input input {
+  background-color: #243447;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 8px;
+  width: 100%;
+  margin: 10px;
+}
+
+.component-pdl-user-message {
+  color: #ffffff;
+  font-size: 20px;
+  /* font-family: 'Mukta Mahee', sans-serif; */
+}
