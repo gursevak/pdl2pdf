@@ -54,7 +54,7 @@ export default class App extends React.PureComponent {
         userMessage: `Please enter a valid URL from www.panjabdigilib.org`
       })
     } else {
-      const metaUrl = `http://cors-anywhere.herokuapp.com/http://${hostUrl}/webuser/searches/displayPage.jsp?ID=${id}&page=1&CategoryID=1`;
+      const metaUrl = `http://cors-sikhutils.herokuapp.com/http://${hostUrl}/webuser/searches/displayPage.jsp?ID=${id}&page=1&CategoryID=1`;
       var numPages = null;
       var title = 'untitled';
       var pages = 1;
@@ -87,7 +87,7 @@ export default class App extends React.PureComponent {
             }).next().text();
             pages = pagesLeft = parseInt(numPages);
             for (let i = 1; i <= pages; i++) {
-              const imageUrl = `http://cors-anywhere.herokuapp.com/http://panjabdigilib.org/images?ID=${id}&page=${i}&pagetype=null`;
+              const imageUrl = `http://cors-sikhutils.herokuapp.com/http://panjabdigilib.org/images?ID=${id}&page=${i}&pagetype=null`;
               Jimp.read(imageUrl)
                 .then(image => {
                   // imagePromises.push(image.getBase64Async(Jimp.MIME_PNG));
