@@ -4,17 +4,15 @@
   "private": true,
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "cors": "^2.8.5",
     "gh-pages": "^2.0.1",
     "jimp": "^0.6.4",
     "jspdf": "^1.5.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-loading-bar": "0.0.7",
     "react-scripts": "3.0.1",
     "websocket-driver": "^0.7.3"
   },
-  "homepage": "https://gursevak.github.io/pdl2pdf",
+  "homepage": "http://pdl2pdf.sikhutils.com/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

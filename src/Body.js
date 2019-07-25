@@ -17,7 +17,7 @@ export default class ConversionInput extends React.PureComponent {
       <div>
         <div className="component-pdl-input">
           <div>
-            <input placeholder="Paste manuscript URL link here, ex: http://panjabdigilib.org/webuser/searches/displayPage.jsp?ID=8497&page=1&CategoryID=1" onChange={this.handleChange} />
+            <input placeholder="Paste a URL link to the manuscript, ex: http://panjabdigilib.org/webuser/searches/displayPage.jsp?ID=8497&page=1&CategoryID=1" onChange={this.handleChange} />
           </div>
           <div className="component-pdl-user-message">
             {this.props.outputLink}
